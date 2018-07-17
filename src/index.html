@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head w3-include-html="head.html"></head>
+
+<body>
+<div>
+  <!--[if lte IE 9]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
+    href="https://browsehappy.com/"> upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+  <div class="container">
+    <h1 class="col center-block center">BEN KASSMAN </h1>
+    <img id="bean_img" src="img/beans.jpg"
+         alt="handsome and qualified software developer wearing an IKEA bowl as a crown" onclick="function makeInvisible() {
+      document.getElementById('bean_img').style.display = 'none';
+    }
+    makeInvisible()">
+  </div>
+
+
+  <div class="biography">
+    I'm Ben Kassman, a freelance developer and designer, based out of
+    <span id="Portland" data-hovText='Oregon' style='cursor:pointer; user-select: none'>Portland</span>.
+  </div>
+  <div class="divider"></div>
+  <div class="resume">
+    <h2><a href="Ben_Kassman_Resume.pdf" target="_blank" id="Resume" data-hovText="Download" download>Resume</a>
+    </h2>
+    <div class="resume-body ">
+      <h3 class="re-title">Work Experience</h3>
+      <div class="resume-item">
+        <div class="row ri-label">
+          <h4 class="col-md-7"><b>Rochester Institutute of Technology</b></h4>
+        </div>
+        <div class="row bg-padding">
+          <div class="col-md-5">
+            <span class="resume-date">May 2017-August 2017</span>
+          </div>
+          <div class="col-md-7">
+            <div class="row"><b>Research Assistant</b></div>
+
+            <div class="row">In the summer of 2017, I worked closely with researchers at the National Technical
+              Institute
+              for the Deaf in Rochester. We worked on an application that sought to improve communication between
+              Hearing
+              and Deaf or Hard of Hearing individuals. I loved the opportunity to work with Deaf and Hard of Hearing
+              researchers, getting their input and feedback on the application as we developed it.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="resume-item">
+        <div class="row ri-label">
+          <h4 class="col-md-7"><b>Lewis and Clark College</b></h4>
+        </div>
+        <div class="row bg-padding">
+          <div class="col-md-5 ">
+            <span class="resume-date">January 2017-Present</span>
+          </div>
+          <div class="col-md-7">
+            <div class="row"><b>Web Developer</b></div>
+
+            <div class="row">I led a team of web developers in creating a web application for the Alumni Relations
+              Department at Lewis and Clark. Our application connects faculty and students to alumni who work in
+              wineries in the area. I have stayed on in a freelance capacity to maintain and update the web application
+              as new alumni connections come in.
+            </div>
+          </div>
+        </div>
+        <div class="row bg-padding">
+          <div class="col-md-5 ">
+            <span class="resume-date">August 2015-December 2017</span>
+          </div>
+          <div class="col-md-7">
+            <div class="row"><b>Teaching Assistant</b></div>
+
+            <div class="row">For three years, I assistant taught multiple classes in the Computer Science department
+              at Lewis and Clark College, including Computer Science I, II and Perspectives in Computer Science.
+              Through this position, I learned to communicate ideas about software development to people who were
+              learning the material for the first time. This has helped me to improve my communication skills with
+              clients, who may think about projects in different terms than the development team.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="re-title">Education</h3>
+      <div class="resume-item">
+        <div class="row ri-label">
+          <h4 class="col-md-7"><b>Lewis and Clark College</b></h4>
+        </div>
+        <div class="row bg-padding">
+          <div class="col-md-5">
+            <p class="resume-date no-margin">BA in Computer Science and Math</p>
+            <p class="resume-date no-margin">Graduated with Honors, Cum Laude</p>
+            <p class="resume-date no-margin">August 2014-May 2018</p>
+          </div>
+          <div class="col-md-7">
+            <ul>
+              <li>Coursework in Software Development, Web Development, Algorithms, HCI, and Programming Language
+                Structures.
+              </li>
+              <li> Honors Thesis in Accessible Software Engineering.</li>
+              <li> Dean's List, 2014-2018</li>
+              <li> Member of Phi Beta Kappa and Pi Mu Epsilon</li>
+              <li> GPA: 3.8</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div w3-include-html="footer.html"></div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+
+  addHover('Portland')
+  addHover('Resume')
+
+  function addHover (id) {
+    document.getElementById(id).addEventListener('mouseover', mouseOver)
+    document.getElementById(id).addEventListener('mouseout', mouseOut)
+  }
+
+  function mouseOver () {
+    document.getElementById(this.id).innerText = document.getElementById(this.id).getAttribute('data-hovText')
+  }
+
+  function mouseOut () {
+    document.getElementById(this.id).innerText = this.id
+  }
+</script>
+<script>includeHTML()</script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  }
+  ga.q = []
+  ga.l = +new Date
+  ga('create', 'UA-XXXXX-Y', 'auto')
+  ga('send', 'pageview')
+</script>
+
+
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

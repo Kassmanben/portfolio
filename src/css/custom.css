@@ -1,0 +1,701 @@
+body {
+  background-color: #ffffff;
+  font-family: "Raleway", serif;
+  font-size: 16px;
+}
+
+div{
+  height:auto;
+  overflow: scroll;
+}
+
+h1 {
+  font-family: "Raleway", serif;
+  font-size: 60px;
+  text-align: center;
+  margin: 10px;
+}
+
+h2 {
+  font-family: "Raleway", serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: "Raleway", serif;
+  text-align: left;
+  font-weight: bold;
+}
+
+hr {
+  margin: 0;
+  border: 1px solid #eee;
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+}
+
+form {
+  font-family: "Raleway", serif;
+}
+
+footer {
+  margin-top: 40px;
+  font-family: "Raleway", serif;
+  background-color: #5e5e5e;
+}
+
+p {
+  font-family: "Raleway", serif;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+
+
+.article-photo{
+  margin-bottom: 20px;
+}
+
+.biography {
+  font-size: x-large;
+}
+
+.biography{
+  padding: 1em 3em;
+  border: 10px solid #e5e5e5;
+  margin: 2% 20%;
+}
+
+.divider{
+  border-bottom: solid 2px #313131;
+  width: 75%;
+  margin:auto;
+  opacity: .30;
+}
+
+.box-hover:hover{
+  padding: 10px;
+  border: 4px solid #e5e5e5;
+  font-size: 28px ;
+}
+
+
+.brand_bar {
+  object-fit: none;
+  object-position: center;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+
+.brand_icon {
+  width: 100%;
+  margin: auto;
+}
+
+.btn{
+  font-family: "Raleway", serif;
+  padding: 7px 12px;
+  background-color: #226086;
+}
+
+.card {
+  box-shadow: 2px 3px 6px #888888;
+  margin: 20px;
+  padding: 20px 20px;
+}
+
+.card-text {
+  margin-top: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.consultation {
+  font-size: 40px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px 0;
+  border: 2px transparent solid;
+  font-size: 30px;
+  width: 50px;
+  height: 52px;
+  text-decoration: none;
+  vertical-align: middle;
+  margin: 0 10px;
+  transition: all .5s ease;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  background: black;
+  color: white;
+  border: 2px white solid;
+  text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github{
+  background-color: white;
+  color: black;
+  padding-top: 10px;
+}
+
+.fa-instagram{
+  height:52px;
+  padding:0;
+  border: 2px transparent solid;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  -webkit-text-fill-color: transparent;
+  font-size: 50px; /* change this to change the size*/
+}
+
+.fa-instagram:hover{
+  -webkit-text-fill-color: white;
+  padding-top: 0;
+}
+
+.fa-file {
+  padding: auto;
+  border: transparent;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  vertical-align: auto;
+  margin: auto;
+  transition: all .5s ease;
+}
+.fa-linkedin {
+  background: #0177b5;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa.fa-navicon {
+  color: black;
+}
+
+.footer-copyright {
+  margin-top: 15px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.img-responsive #heading_img {
+  padding-top: .5%;
+}
+
+.intro {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+
+
+
+.lighter, .article-date {
+  color: rgba(90, 90, 90, 0.85);
+}
+
+.lighter-link-color {
+  color: #75c6ff;
+}
+
+.links {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+.navbar {
+  margin-bottom: 0;
+  font-family: "Raleway", serif;
+}
+
+.navbar li {
+  float: none;
+  display: inline-block;
+}
+
+.navbar li a {
+  transition: background-color, color .75s;
+  font-size: x-large;
+}
+
+.navbar-brand {
+  float: none;
+  text-transform: uppercase;
+  font-family: "Raleway", serif;
+  font-size: medium;
+  margin-right: auto;
+  height: 100%;
+  padding: 0;
+  display: block;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: rgba(0, 0, 0, 0.99);
+  background-color: #e2e2e2;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #00000082;
+}
+
+.navbar-header {
+  float: left;
+  text-align: center;
+  width: 100%;
+  display: inline;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.navbar-header .btn {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.navbar-header .btn:hover {
+  background-color: #ffffff;
+  opacity: 1.0;
+}
+
+.navbar-nav, .navbar-toggle {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Raleway", serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.navbar-nav li a {
+  color: #777;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  padding: 0 50%;
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.navbar-text {
+  display: inline;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .6;
+  background-color: rgba(0, 0, 0, 0.98);
+}
+
+.page-footer{
+  margin-top: 40px;
+  background-color: #313131;
+  color: white;
+  padding: 15px 15px
+}
+
+.resume {
+  font-family: "Raleway", sans-serif;
+}
+
+.resume-body {
+  background-color: #FFE127;
+  border: 10px solid #e5e5e5;
+  margin: 2% 20%;
+}
+
+.resume-body h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-family: "Raleway", sans-serif;
+  padding: 10px 0 10px 15px ;
+}
+
+.resume-date{
+  color: #575757;
+  font-size: small;
+}
+
+.resume-item{
+  padding-left: 15px;
+}
+
+.resume-item b{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.re-title{
+  background-color: #2b2b2b;
+  color: #FFE127;
+}
+
+.ri{
+  background-color: #f2d425;
+}
+
+.ri-label{
+  background-color: #ecc800;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.sm-padding{
+  padding-top: 3px;
+}
+
+.bg-padding{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.tiptext{
+  visibility: hidden;
+  padding-top: 1em;
+}
+.tip:hover .tiptext{
+  visibility: visible;
+}
+
+.wider {
+  padding: 0;
+}
+
+#front_page_image {
+  width: 200px;
+}
+
+#about_me_image {
+  width: 400px;
+  margin-bottom: 14px;
+}
+
+#psych_today {
+  margin: 0 30px 0 10px;
+  width: auto;
+}
+
+#Resume{
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+}
+
+
+
+
+#services-dropdown {
+  text-align: center;
+  width: 260%;
+}
+#services_focus {
+  margin: 10px;
+}
+
+#services_focus li {
+  font-family: "Raleway", serif;
+  padding: 6px 6px;
+  font-size: 16px;
+}
+
+@media (min-width: 1201px ) {
+
+
+  .intro {
+    width: 990px;
+  }
+
+  #front_page_image {
+    float: left;
+    margin-top: 20%;
+    padding-right: auto;
+  }
+
+  #front_page_text {
+    padding-left: 20px;
+  }
+
+  #about_me, #front_page_text {
+    width: 65%;
+    margin-top: 85px;
+    margin-bottom: 85px;
+    float: right;
+    font-family: "Raleway", serif;
+    font-size: 22px;
+  }
+
+  .navbar-nav li a {
+    font-size: large;
+  }
+
+}
+
+
+/*Devices/windows with 1201px width or less */
+@media (max-width: 1201px) {
+  .collapsing {
+    overflow: hidden !important;
+  }
+
+  .consultation {
+    font-size: 30px;
+  }
+
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+
+  .navbar-default {
+    min-height: 0px;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    background-color: white;
+    margin: 0;
+  }
+
+  .navbar-nav > li {
+    float: none;
+  }
+
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-text {
+    float: none;
+    margin: 15px 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  #services-dropdown {
+    text-align: center;
+    width: 100%;
+    font-size: large;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .intro {
+    width: 750px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .biography{
+    margin: 2% 10%;
+    font-size: large;
+  }
+  .consultation {
+    font-size: 26px;
+  }
+
+  .dropdown-menu > li > a {
+    font-size: large;
+    text-align: center;
+    margin: 0 30px;
+  }
+
+  #services-dropdown {
+    text-align: center;
+    width: 100%;
+    font-size: large;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  .dropdown-menu > li > a {
+    font-size: large;
+    text-align: center;
+    margin: 0 30px;
+  }
+
+  .navbar-brand {
+    font-size: large;
+  }
+
+  .navbar-nav > li > a {
+    font-size: large;
+  }
+
+  .navbar-nav li a {
+    font-size: large;
+  }
+
+  #about_me, #front_page_text {
+    margin-top: 42.5px;
+    margin-bottom: 42.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .biography{
+    font-size: medium;
+  }
+
+  .consultation {
+    font-size: 22px;
+  }
+
+  .navbar li a {
+    transition: background-color, color .75s;
+    font-size: large;
+    /*padding: 8px 60px;*/
+  }
+
+  .dropdown-menu > li > a {
+    font-size: large;
+    text-align: center;
+    margin: 0 30px;
+  }
+
+  #services-dropdown {
+    text-align: center;
+    width: 100%;
+    font-size: large;
+  }
+
+}
+
+
+
+
