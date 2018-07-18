@@ -244,6 +244,18 @@ p {
   background-color:  #ff760094;
 }
 
+.progress-bar{
+  font-size: medium;
+}
+
+.skills{
+  margin: 2% 20%;
+}
+
+.skills h3 {
+  margin-top: .5em;
+  margin-bottom: .25em;
+}
 .resume-body h3, .portfolio-body h3{
   text-align: center;
   margin: 0;
@@ -355,6 +367,9 @@ p {
 }
 
 @media (max-width: 450px) {
+  body, p{
+    font-size: 16px;
+  }
   .biography {
     margin: 10% 5% 10%;
     padding: .5em 1em;
@@ -424,6 +439,9 @@ p {
 
   .resume-school-info{
     padding-top: 7px;
+  }
+  .skills{
+    margin: 2% 10%
   }
 
   #bean_img {
