@@ -12,7 +12,7 @@
 
 
   <div class="container">
-    <h1 class="col center-block center">BEN KASSMAN </h1>
+    <h1 class="col center-block center" id="heading">BEN KASSMAN </h1>
     <img id="bean_img" src="img/beans.jpg"
          alt="handsome and qualified software developer wearing an IKEA bowl as a crown" onclick="function makeInvisible() {
       document.getElementById('bean_img').style.display = 'none';
@@ -23,88 +23,98 @@
 
   <div class="biography">
     I'm Ben Kassman, a freelance developer and designer, based out of
-    <span id="Portland" data-hovText='Oregon' style='cursor:pointer; user-select: none'>Portland</span>.
+    <span id="Portland" data-hovText='O r e g o n' style='cursor:pointer; user-select: none'>Portland</span>.
   </div>
   <div class="divider"></div>
   <div class="resume">
     <h2><a href="Ben_Kassman_Resume.pdf" target="_blank" id="Resume" data-hovText="Download" download>Resume</a>
     </h2>
-    <div class="resume-body ">
-      <h3 class="re-title">Work Experience</h3>
+    <div class="resume-body">
+      <h3 class="resume-title">Work Experience</h3>
       <div class="resume-item">
-        <div class="row ri-label">
-          <h4 class="col-md-7"><b>Rochester Institutute of Technology</b></h4>
+        <div class="resume-item-label bg-margin">
+          <h4 class="col-xs-12 col-md-7"><b>Rochester Institute of Technology</b></h4>
         </div>
-        <div class="row bg-padding">
-          <div class="col-md-5">
-            <span class="resume-date">May 2017-August 2017</span>
+        <div class="bg-margin resume-item">
+          <div class="col-xs-12 col-md-6 col-md-push-5 resume-item-jobTitle">
+            <b>Research Assistant</b>
           </div>
-          <div class="col-md-7">
-            <div class="row"><b>Research Assistant</b></div>
-
-            <div class="row">In the summer of 2017, I worked closely with researchers at the National Technical
-              Institute
-              for the Deaf in Rochester. We worked on an application that sought to improve communication between
-              Hearing
-              and Deaf or Hard of Hearing individuals. I loved the opportunity to work with Deaf and Hard of Hearing
-              researchers, getting their input and feedback on the application as we developed it.
-            </div>
+          <div class="col-xs-12 col-md-5 col-md-pull-6 resume-date">
+            <span>May 2017-August 2017</span>
+          </div>
+          <div class="col-xs-12 col-md-12 col-md-pull-6 resume-date">
+          </div>
+          <div class="col-xs-12 col-md-6 col-md-push-5 resume-item-jobDescription">In the summer of 2017, I worked
+            closely with
+            researchers at the National Technical Institute for the Deaf in Rochester. We worked on an application that
+            sought to improve communication between Hearing and Deaf or Hard of Hearing individuals. I loved the
+            opportunity to work with Deaf and Hard of Hearing researchers, getting their input and feedback on the
+            application as we developed it.
           </div>
         </div>
       </div>
       <div class="resume-item">
-        <div class="row ri-label">
-          <h4 class="col-md-7"><b>Lewis and Clark College</b></h4>
+        <div class="resume-item-label bg-margin">
+          <h4 class="col-xs-12 col-md-7"><b>Lewis & Clark College</b></h4>
         </div>
-        <div class="row bg-padding">
-          <div class="col-md-5 ">
-            <span class="resume-date">January 2017-Present</span>
+        <div class="bg-margin resume-item">
+          <div class="col-xs-12 col-md-6 col-md-push-5 resume-item-jobTitle">
+            <b>Web Developer</b>
           </div>
-          <div class="col-md-7">
-            <div class="row"><b>Web Developer</b></div>
-
-            <div class="row">I led a team of web developers in creating a web application for the Alumni Relations
-              Department at Lewis and Clark. Our application connects faculty and students to alumni who work in
-              wineries in the area. I have stayed on in a freelance capacity to maintain and update the web application
-              as new alumni connections come in.
-            </div>
+          <div class="col-xs-12 col-md-5 col-md-pull-6 resume-date">
+            <span>January 2018-Present</span>
           </div>
-        </div>
-        <div class="row bg-padding">
-          <div class="col-md-5 ">
-            <span class="resume-date">August 2015-December 2017</span>
+          <div class="col-xs-12 col-md-12 col-md-pull-6 resume-date">
           </div>
-          <div class="col-md-7">
-            <div class="row"><b>Teaching Assistant</b></div>
-
-            <div class="row">For three years, I assistant taught multiple classes in the Computer Science department
-              at Lewis and Clark College, including Computer Science I, II and Perspectives in Computer Science.
-              Through this position, I learned to communicate ideas about software development to people who were
-              learning the material for the first time. This has helped me to improve my communication skills with
-              clients, who may think about projects in different terms than the development team.
-            </div>
+          <div class="col-xs-12 col-md-6 col-md-push-5 resume-item-jobDescription">I led a team of web developers in
+            creating a
+            web application for the Alumni Relations Department at Lewis and Clark. Our application connects faculty and
+            students to alumni who work in wineries in the area. I have stayed on in a freelance capacity to maintain
+            and update the web application as new alumni connections come in.
+          </div>
+          <div class="col-xs-12 col-md-7 col-md-push-5 resume-item-jobTitle">
+            <b>Teaching Assistant</b>
+          </div>
+          <div class="col-xs-12 col-md-5 col-md-pull-7 resume-date">
+            <span>August 2015-December 2017</span>
+          </div>
+          <div class="col-xs-12 col-md-12 col-md-pull-6 resume-date">
+          </div>
+          <div class="col-xs-12 col-md-6 col-md-push-5 resume-item-jobDescription">For three years, I assistant taught
+            multiple
+            classes in the Computer Science department at Lewis and Clark College, including Computer Science I, II and
+            Perspectives in Computer Science. Through this position, I learned to communicate ideas about software
+            development to people who were learning the material for the first time. This has helped me to improve my
+            communication skills with clients, who may think about projects in different terms than the development
+            team.
           </div>
         </div>
       </div>
-
-      <h3 class="re-title">Education</h3>
+    </div>
+    <div class="resume-body margin-top">
+      <h3 class="resume-title">Education</h3>
       <div class="resume-item">
-        <div class="row ri-label">
-          <h4 class="col-md-7"><b>Lewis and Clark College</b></h4>
+        <div class="row resume-item-label bg-margin">
+          <h4 class="col-xs-12 col-md-7"><b>Lewis and Clark College</b></h4>
         </div>
-        <div class="row bg-padding">
-          <div class="col-md-5">
-            <p class="resume-date no-margin">BA in Computer Science and Math</p>
+        <div class="row resume-item">
+          <div class="col-xs-12 col-md-5">
+            <p class="resume-school-info no-margin">BA in Computer Science and Math</p>
             <p class="resume-date no-margin">Graduated with Honors, Cum Laude</p>
             <p class="resume-date no-margin">August 2014-May 2018</p>
           </div>
-          <div class="col-md-7">
+          <div class="col-xs-12 col-md-7">
+            In my time at Lewis and Clark, I did coursework in Software Development, Web Development,
+            Algorithms, HCI, and Programming Language
+            Structures, among other things. (For a full transcript, <a href="Transcript.pdf" target="_blank">click
+            here</a>). <br><br>
+            I did my senior honors thesis on accessible software for people who use screen readers, building a proof of
+            concept
+            for a PDF-to-DAISY file converter for textbooks.<br>
+            <h5><b>Honors and Awards</b></h5>
             <ul>
-              <li>Coursework in Software Development, Web Development, Algorithms, HCI, and Programming Language
-                Structures.
-              </li>
               <li> Honors Thesis in Accessible Software Engineering.</li>
-              <li> Dean's List, 2014-2018</li>
+              <li> Dean's List every semester</li>
               <li> Member of Phi Beta Kappa and Pi Mu Epsilon</li>
               <li> GPA: 3.8</li>
             </ul>
@@ -113,30 +123,87 @@
       </div>
     </div>
   </div>
+  <h3 class="download-resume"><a href="Ben_Kassman_Resume.pdf" target="_blank" download>Download Resume</a>
+  </h3>
+
+  <div class="divider"></div>
+
+  <div class="skills">
+    
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-body">
+      <div class="portfolio-info">This area of my site is a work in progress. Projects will be added to it as they are
+        made web-application ready. For the source code to my various projects, my <a
+          href="https://github.com/kassmanben">Github Profile</a> has the majority of the code that I can share.
+      </div>
+
+      <div class="portfolio-item-label"><h3><a href="https://peacetreeco.com/" target="_blank">Peace Tree Counseling</a>
+      </h3></div>
+      <div class="portfolio-item">
+        <div class="col-md-6"><img class="img-responsive portfolio-image" src="img/Peacetree-screenshot.jpg"></div>
+        <div class="col-md-6"><img class="img-responsive portfolio-image" src="img/Peacetree-screenshot-mobile.jpg">
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <p> This website was built without templating on pure Javascript and HTML5/CSS, utilizing a Bootstrap framework
+          for responsive design. I used Firebase as a backend for hosting and deployment, as well as utilizing a Firebase database to programmatically update the user's weekly article feed</p>
+        <p> Visit the webpage at <a href="https://peacetreeco.com/" target="_blank">peacetreeco.com</a></p>
+      </div>
+    </div>
+  </div>
 </div>
 
 
 <div w3-include-html="footer.html"></div>
-</div>
 
-<script src="js/main.js"></script>
-<script>
-
-  addHover('Portland')
-  addHover('Resume')
-
-  function addHover (id) {
-    document.getElementById(id).addEventListener('mouseover', mouseOver)
-    document.getElementById(id).addEventListener('mouseout', mouseOut)
+<script> function includeHTML () {
+  let z, i, elmnt, file, xhttp
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName('*')
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i]
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute('w3-include-html')
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest()
+      xhttp.onreadystatechange = function () {
+        if (this.readyState === 4) {
+          if (this.status === 200) elmnt.innerHTML = this.responseText
+          if (this.status === 404) elmnt.innerHTML = 'Page not found.'
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute('w3-include-html')
+          includeHTML()
+        }
+      }
+      xhttp.open('GET', file, true)
+      xhttp.send()
+      /*exit the function:*/
+      return
+    }
   }
+}
 
-  function mouseOver () {
-    document.getElementById(this.id).innerText = document.getElementById(this.id).getAttribute('data-hovText')
-  }
+addHover('Portland')
+addHover('Resume')
 
-  function mouseOut () {
-    document.getElementById(this.id).innerText = this.id
-  }
+function addHover (id) {
+  document.getElementById(id).addEventListener('mouseover', mouseOver)
+  document.getElementById(id).addEventListener('mouseout', mouseOut)
+}
+
+function mouseOver () {
+  document.getElementById(this.id).innerText = document.getElementById(this.id).getAttribute('data-hovText') + '\t'
+}
+
+function mouseOut () {
+  document.getElementById(this.id).innerText = this.id
+}
 </script>
 <script>includeHTML()</script>
 
