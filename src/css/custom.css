@@ -73,6 +73,7 @@ p {
   padding: 1em 3em;
   border: 10px solid #e5e5e5;
   margin: 2% 20%;
+  text-align: center;
 }
 
 .divider {
@@ -307,25 +308,33 @@ p {
   padding-bottom: 12px;
 }
 
-
+#alma_img, #rit_img{
+  margin-top: 20px;
+}
 #bean_img {
   border: 10px solid #e5e5e5;
   margin: 0 20%;
   width: 60%
 }
 
-
 #heading {
   margin: 10px 0;
-  font-family: "Libre Baskerville", serif;
 }
 
-
+#lclark_img{
+  width: 60%;
+  margin: 25px 0 0 20px;
+}
 #Resume {
   text-decoration: none;
   color: black;
   font-family: "Raleway", sans-serif;
   font-size: 60px;
+}
+
+#rit_img{
+ margin: 20px 0 0 20px;
+  width:60%;
 }
 
 @media (min-width: 1201px ) {
