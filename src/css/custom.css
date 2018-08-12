@@ -411,6 +411,9 @@ p {
   body, p{
     font-size: 16px;
   }
+  h5{
+    margin:0
+  }
   .biography {
     margin: 10% 5% 10%;
     padding: .5em 1em;
