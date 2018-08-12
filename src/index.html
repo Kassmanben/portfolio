@@ -27,7 +27,7 @@
   </div>
   <div class="divider"></div>
   <div class="resume">
-    <h2><a href="Ben_Kassman_Resume.pdf" target="_blank" id="Resume" data-hovText="Download" download>Resume</a>
+    <h2><a href="Ben Kassman Resume.pdf" target="_blank" id="Resume" data-hovText="Download" download>Resume</a>
     </h2>
     <div class="resume-body">
       <h3 class="resume-title">Work Experience</h3>
@@ -139,53 +139,95 @@
       </div>
     </div>
   </div>
-  <h3 class="download-resume"><a href="Ben_Kassman_Resume.pdf" target="_blank" download>Download Resume</a>
+  <h3 class="download-resume"><a href="Ben Kassman Resume.pdf" target="_blank" download>Download Resume</a>
   </h3>
 
   <div class="divider"></div>
 
   <div class="skills">
+
+
     <h2>Skills</h2>
-    <h3>Java</h3>
-    <div class="progress">
+    <div>Filter:
+      <a href="#webdev"><h5 id="webdev">Web Development</h5></a>
+      <a href="#allskills"><h5 id="allskills">All Skills</h5></a>
+    </div>
+    <h3 class="allskills">Python</h3>
+    <div class="progress allskills">
       <div class="progress-bar" role="progressbar" aria-valuenow="100"
            aria-valuemin="0" aria-valuemax="100" style="width:100%">
         <span class="sr-only">Expert</span>
         Expert
       </div>
     </div>
-    <h3>Python</h3>
-    <div class="progress">
+    <h3 class="allskills webdev">Javascript</h3>
+    <div class="progress webdev allskills">
       <div class="progress-bar" role="progressbar" aria-valuenow="100"
            aria-valuemin="0" aria-valuemax="100" style="width:100%">
         <span class="sr-only">Expert</span>
         Expert
       </div>
     </div>
-    <h3>Javascript</h3>
-    <div class="progress">
+    <h3 class="allskills">Java</h3>
+    <div class="progress allskills">
       <div class="progress-bar" role="progressbar" aria-valuenow="80"
            aria-valuemin="0" aria-valuemax="100" style="width:80%">
         <span class="sr-only">Advanced</span>
         Advanced
       </div>
     </div>
-    <h3>HTML & CSS</h3>
-    <div class="progress">
+    <h3 class="allskills webdev">HTML & CSS</h3>
+    <div class="progress webdev allskills">
       <div class="progress-bar" role="progressbar" aria-valuenow="80"
            aria-valuemin="0" aria-valuemax="100" style="width:80%">
         <span class="sr-only">Advanced</span>
         Advanced
       </div>
     </div>
-    <h3>Angular, Node, & React</h3>
-    <div class="progress">
+    <h3 class="allskills webdev">Angular, Node, & React</h3>
+    <div class="progress webdev allskills">
       <div class="progress-bar" role="progressbar" aria-valuenow="60"
            aria-valuemin="0" aria-valuemax="100" style="width:60%">
         <span class="sr-only">Intermediate</span>
         Intermediate
       </div>
     </div>
+
+    <script>
+      const skills = document.getElementsByClassName('allskills')
+      const filter = (filter) => {
+        for (let i = 0; i < skills.length; i++) {
+          if (!skills[i].classList.contains(filter)) {
+            skills[i].classList.add('hidden')
+          }
+          else {
+            skills[i].classList.remove('hidden')
+          }
+        }
+      }
+
+      const clearFilter = () => {
+        for (let i = 0; i < skills.length; i++) {
+          skills[i].classList.remove("hidden")
+        }
+      }
+
+      const updateFilter = (x) => {
+        const hash = window.location.hash.replace('#', '')
+        const options = ['webdev', 'allskills']
+
+        if (options.indexOf(hash) > -1) {
+          filter(hash)
+        }
+        else {
+          clearFilter()
+        }
+      }
+
+      updateFilter();
+      window.addEventListener("hashchange", updateFilter)
+
+    </script>
 
     <h3>Other Skills:</h3>
     <ul>

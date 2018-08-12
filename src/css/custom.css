@@ -33,13 +33,22 @@ h2 {
   font-family: "Raleway", serif;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h3 {
   font-family: "Raleway", serif;
   text-align: left;
   font-weight: bold;
+}
+
+h5{
+  font-size: 14px;
+  display: inline-block;
+  background: #fffa6e;
+  padding: 5px;
+  border: #e5e5e5 solid 1px;
+  margin: 5px;
 }
 
 
@@ -64,6 +73,10 @@ p {
   margin-top: 8px;
 }
 
+.allskills{
+  transition: all .5s;
+  opacity: 1;
+}
 
 .biography {
   font-size: x-large;
@@ -247,6 +260,12 @@ p {
 
 .progress-bar{
   font-size: medium;
+  background-color: #ffda02;
+  color: black;
+}
+
+.progress{
+  margin-bottom: 10px
 }
 
 .skills{
@@ -254,9 +273,14 @@ p {
 }
 
 .skills h3 {
-  margin-top: .5em;
+  margin-top: .25em;
   margin-bottom: .25em;
 }
+
+.skills h3.hidden{
+  margin: 0;
+}
+
 .resume-body h3, .portfolio-body h3{
   text-align: center;
   margin: 0;
@@ -306,6 +330,14 @@ p {
 
 .bg-padding {
   padding-bottom: 12px;
+}
+
+.hidden{
+  padding: 0;
+  margin: 0;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
 }
 
 #alma_img, #rit_img{
