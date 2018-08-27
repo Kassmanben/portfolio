@@ -10,7 +10,6 @@
     href="https://browsehappy.com/"> upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-
   <div class="container">
     <h1 class="col center-block center" id="heading">BEN KASSMAN </h1>
     <img id="bean_img" src="img/beans.jpg"
@@ -20,14 +19,62 @@
     makeInvisible()">
   </div>
 
-
   <div class="biography">
-    I'm Ben Kassman, a freelance developer and designer, based out of
+    I'm Ben Kassman, a software engineer, based out of
     <span id="Portland" data-hovText='O r e g o n' style='cursor:pointer; user-select: none'>Portland</span>.
   </div>
+
+  <div class="portfolio">
+
+    <h2>Portfolio <a class="jump-to-contact" href="#contact-me"> <i class="material-icons">email</i>
+      <i class="material-icons">keyboard_arrow_down</i>
+    </a></h2>
+
+    <div class="hidden-jump-to=contact">
+
+    </div>
+    <div class="portfolio-body">
+      <div class="portfolio-info">This area of my site is a work in progress. Projects will be added to it as they are
+        made web-application ready. For the source code to my various projects, my <a
+          href="https://github.com/kassmanben">Github Profile</a> has the majority of the code that I can share.
+      </div>
+
+      <div class="portfolio-item-label"><h3><a href="https://peacetreeco.com/" target="_blank">Peace Tree Counseling</a>
+      </h3></div>
+      <div class="portfolio-item">
+        <div class="col-md-6"><img class="img-responsive portfolio-image" src="img/Peacetree-screenshot.jpg"></div>
+        <div class="col-md-6"><img class="img-responsive portfolio-image" src="img/Peacetree-screenshot-mobile.jpg">
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <p> This website was built without templating on pure Javascript and HTML5/CSS, utilizing a Bootstrap framework
+          for responsive design. I used Firebase as a backend for hosting and deployment, as well as utilizing a
+          Firebase database to programmatically update the user's weekly article feed</p>
+        <p> Visit the webpage at <a href="https://peacetreeco.com/" target="_blank">peacetreeco.com</a></p>
+      </div>
+
+      <div class="portfolio-item-label"><h3><a href="https://twitter.com/wikileek_" target="_blank">Wikileek</a>
+      </h3></div>
+      <div class="portfolio-item">
+        <div><img class="img-responsive portfolio-image" src="img/wikileek.jpg">
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <p> I built this Twitter bot as a tool to demonstrate Markov chain models. It takes in information from the
+          Wikipedia text dump (a collection of text from every article on Wikipedia) and parses it into a SQL database
+          that tracks the frequency with which the word is preceded and followed by another word. This information is
+          used to generate tweets in the style of Wikipedia articles. The app is written using Node.js and mounted on
+          Heroku.</p>
+        <p> Follow this bot <a href="https://twitter.com/wikileek_" target="_blank">@wikileek_</a></p>
+      </div>
+    </div>
+  </div>
+
   <div class="divider"></div>
   <div class="resume">
-    <h2><a href="Ben Kassman Resume.pdf" target="_blank" id="Resume" data-hovText="Download" download>Resume</a>
+    <h2><a href="Ben Kassman Resume.pdf" target="_blank" id="Resume" data-hovText="Download" download>Resume<a class="jump-to-contact" href="#contact-me"> <i class="material-icons">email</i>
+      <i class="material-icons">keyboard_arrow_down</i>
+    </a></a>
     </h2>
     <div class="resume-body">
       <h3 class="resume-title">Work Experience</h3>
@@ -147,10 +194,20 @@
   <div class="skills">
 
 
-    <h2>Skills</h2>
+    <h2>Skills <a class="jump-to-contact" href="#contact-me"> <i class="material-icons">email</i>
+      <i class="material-icons">keyboard_arrow_down</i>
+      </a></h2>
     <div>Filter:
+      <a href="#allskills"><h5 id="allskills">Software Engineering</h5></a>
       <a href="#webdev"><h5 id="webdev">Web Development</h5></a>
-      <a href="#allskills"><h5 id="allskills">All Skills</h5></a>
+    </div>
+    <h3 class="allskills webdev">Accessibility-Oriented Software</h3>
+    <div class="progress allskills webdev">
+      <div class="progress-bar" role="progressbar" aria-valuenow="100"
+           aria-valuemin="0" aria-valuemax="100" style="width:100%">
+        <span class="sr-only">Expert</span>
+        Expert
+      </div>
     </div>
     <h3 class="allskills">Python</h3>
     <div class="progress allskills">
@@ -182,6 +239,22 @@
            aria-valuemin="0" aria-valuemax="100" style="width:80%">
         <span class="sr-only">Advanced</span>
         Advanced
+      </div>
+    </div>
+    <h3 class="allskills webdev">MongoDB</h3>
+    <div class="progress webdev allskills">
+      <div class="progress-bar" role="progressbar" aria-valuenow="80"
+           aria-valuemin="0" aria-valuemax="80" style="width:80%">
+        <span class="sr-only">Advanced</span>
+        Advanced
+      </div>
+    </div>
+    <h3 class="allskills">C</h3>
+    <div class="progress allskills">
+      <div class="progress-bar" role="progressbar" aria-valuenow="60"
+           aria-valuemin="0" aria-valuemax="100" style="width:60%">
+        <span class="sr-only">Intermediate</span>
+        Intermediate
       </div>
     </div>
     <h3 class="allskills webdev">Angular, Node, & React</h3>
@@ -234,53 +307,21 @@
       <li>Git</li>
       <li>Shell Scripting</li>
       <li>Linux, MacOS and Windows</li>
-      <li>Firebase & MongoDB</li>
+      <li>Firebase & SQL Databases/li>
       <li>JUnit & other unit testing methodologies</li>
     </ul>
 
-    <p>If you dont see a skill on here and want to know if I have expereince with it, feel free to email me! This is
+    <p>If you dont see a skill on here and want to know if I have expereince with it, feel free to <a href="#contact-me">email me!</a> This is
       by no means an exhaustive list. </p>
   </div>
 
   <div class="divider"></div>
 
-  <div class="portfolio">
-    <h2>Portfolio</h2>
-    <div class="portfolio-body">
-      <div class="portfolio-info">This area of my site is a work in progress. Projects will be added to it as they are
-        made web-application ready. For the source code to my various projects, my <a
-          href="https://github.com/kassmanben">Github Profile</a> has the majority of the code that I can share.
-      </div>
 
-      <div class="portfolio-item-label"><h3><a href="https://peacetreeco.com/" target="_blank">Peace Tree Counseling</a>
-      </h3></div>
-      <div class="portfolio-item">
-        <div class="col-md-6"><img class="img-responsive portfolio-image" src="img/Peacetree-screenshot.jpg"></div>
-        <div class="col-md-6"><img class="img-responsive portfolio-image" src="img/Peacetree-screenshot-mobile.jpg">
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <p> This website was built without templating on pure Javascript and HTML5/CSS, utilizing a Bootstrap framework
-          for responsive design. I used Firebase as a backend for hosting and deployment, as well as utilizing a
-          Firebase database to programmatically update the user's weekly article feed</p>
-        <p> Visit the webpage at <a href="https://peacetreeco.com/" target="_blank">peacetreeco.com</a></p>
-      </div>
-
-      <div class="portfolio-item-label"><h3><a href="https://twitter.com/wikileek_" target="_blank">Wikileek</a>
-      </h3></div>
-      <div class="portfolio-item">
-        <div><img class="img-responsive portfolio-image" src="img/wikileek.jpg">
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <p> I built this Twitter bot as a tool to demonstrate Markov chain models. It takes in information from the
-          Wikipedia text dump (a collection of text from every article on Wikipedia) and parses it into a SQL database
-          that tracks the frequency with which the word is preceded and followed by another word. This information is
-          used to generate tweets in the style of Wikipedia articles. The app is written using Node.js and mounted on
-          Heroku.</p>
-        <p> Follow this bot <a href="https://twitter.com/wikileek_" target="_blank">@wikileek_</a></p>
-      </div>
-    </div>
+  <div id="contact-me" class="contact-me">
+    <h3>Contact Me</h3>
+    <div class="contact-me-item"><b>Email: </b><a href="mailto:kassmanben@gmail.com">kassmanben@gmail.com</a></div>
+    <div class="contact-me-item"><b>Phone: </b><a href="tel:7206306244">720-630-6244</a></>
   </div>
 </div>
 

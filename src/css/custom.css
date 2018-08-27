@@ -33,7 +33,9 @@ h2 {
   font-family: "Raleway", serif;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 10px;
   margin-bottom: 10px;
+  font-size: xx-large;
 }
 
 h3 {
@@ -92,10 +94,10 @@ p {
 .divider {
   border-bottom: solid 2px #313131;
   width: 75%;
-  margin: auto;
+  margin: 20px auto;
+
   opacity: .30;
 }
-
 
 .btn {
   font-family: "Raleway", serif;
@@ -103,12 +105,24 @@ p {
   background-color: #226086;
 }
 
-.center {
+.center, .hidden-jump-to-contact {
   text-align: center;
   margin: auto;
 }
 
+.contact-me{
+  border: 10px solid #e5e5e5;
+  background-color: #ff8484;
+  margin: 30px 10%;
+}
 
+.contact-me h3{
+  background-color: #dc5b5a;
+}
+
+.contact-me-item{
+  padding: 5px 20px;
+}
 /* Style all font awesome icons */
 .fa {
   padding: 10px 0;
@@ -190,6 +204,9 @@ p {
   margin-top: 15px;
 }
 
+.hidden-jump-to-contact{
+  padding: 5px 5px 0 5px
+}
 
 .intro {
   border-top: 2px solid black;
@@ -203,6 +220,8 @@ p {
   text-align: center;
   font-weight: normal;
 }
+
+
 
 
 .no-margin {
@@ -281,7 +300,7 @@ p {
   margin: 0;
 }
 
-.resume-body h3, .portfolio-body h3{
+.resume-body h3, .portfolio-body h3, .contact-me h3{
   text-align: center;
   margin: 0;
   text-transform: uppercase;
@@ -352,6 +371,19 @@ p {
 #heading {
   margin: 10px 0;
 }
+.jump-to-contact{
+  float: right;
+  margin: 0 10% 0 -20%;
+  padding: 5px 5px 0 5px;
+}
+.jump-to-contact:hover{
+  text-decoration: none;
+  background-color: #ffc3c3;
+}
+
+.jump-to-contact a{
+  text-decoration: none;
+}
 
 #lclark_img{
   width: 60%;
@@ -361,7 +393,6 @@ p {
   text-decoration: none;
   color: black;
   font-family: "Raleway", sans-serif;
-  font-size: 60px;
 }
 
 #rit_img{
@@ -376,7 +407,7 @@ p {
 /*Devices/windows with 1201px width or less */
 @media (max-width: 1201px) {
   .resume-body, .portfolio-body {
-    margin: 5% 10% 0 10%;
+    margin: 0 10% 0 10%;
   }
 
   .portfolio-image{
@@ -397,6 +428,10 @@ p {
     font-size: large;
   }
 
+  #down_arrow{
+    display:none;
+  }
+
 }
 
 
@@ -404,6 +439,7 @@ p {
   .biography {
     font-size: medium;
   }
+
 
 }
 
@@ -453,7 +489,7 @@ p {
     font-size: small;
   }
 
-  .resume-body, .portfolio-body {
+  .resume-body, .portfolio-body, .contact-me {
     margin: 5% 5% 0 5%;
   }
 
